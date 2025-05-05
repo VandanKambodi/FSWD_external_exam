@@ -40,7 +40,7 @@ function EmployeeForm() {
       <input name="email" placeholder="Email" value={form.email} onChange={handleChange} />
       <input name="phone" placeholder="Phone" value={form.phone} onChange={handleChange} />
       <input type="file" onChange={handleFile} />
-      <button type="submit">{id ? 'Update' : 'Add'}</button>
+      <button className='sub' type="submit">{id ? 'Update' : 'Add'}</button>
     </form>
   );
 }

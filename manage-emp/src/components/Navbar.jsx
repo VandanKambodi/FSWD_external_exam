@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import './Navbar.css';
 
 function Navbar() {
   const navigate = useNavigate();
@@ -12,13 +13,13 @@ function Navbar() {
 
   return (
     <nav>
-      <Link to="/">Home</Link>
+      <Link className="lgo" to="/">Home</Link>
       {isLoggedIn ? (
-        <button onClick={handleLogout}>Logout</button>
+        <button className="nlg" onClick={handleLogout}>Logout</button>
       ) : (
         <>
-          <Link to="/login">Login</Link>
-          <Link to="/register">Register</Link>
+          <Link className="lg" to="/login">Login</Link>
+          <Link className="lg" to="/register">Register</Link>
         </>
       )}
     </nav>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import API from '../../api';
 import { useNavigate } from 'react-router-dom';
+import './Register.css';
 
 function Register() {
   const [form, setForm] = useState({ username: '', password: '' });
@@ -26,7 +27,7 @@ function Register() {
       {error && <p style={{color:'red'}}>{error}</p>}
       <input name="username" placeholder="Username" onChange={handleChange} required />
       <input name="password" type="password" placeholder="Password" onChange={handleChange} required />
-      <button type="submit">Register</button>
+      <button className='sub' type="submit">Register</button>
     </form>
   );
 }
