@@ -6,7 +6,6 @@ const EmployeeSchema = new mongoose.Schema({
   profilePic: String,
   email: String,
   phone: String,
-  // Add more fields as needed
 });
 
 module.exports = mongoose.model('Employee', EmployeeSchema);
